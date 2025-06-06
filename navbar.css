@@ -1,6 +1,6 @@
 .bg-header-offwhite {
   --tw-bg-opacity: 0.5;
-  background-color: #f9d6b7;
+  background-color: whitesmoke;
 }
 
 .text-custom-heading {
@@ -19,7 +19,7 @@
 }
 
 #switch.light-theme {
-  color: rgb(62, 62, 62);;
+  color: rgb(62, 62, 62);
 }
 
 
@@ -172,6 +172,14 @@ a {
   text-decoration: none;
   color: white;
   position: relative;
+}
+
+a:visited, 
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
 }
 
 a::after {

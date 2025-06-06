@@ -1268,7 +1268,7 @@ video {
 
 .mission-1 {
   display: flex;
-  color: #F8FAFC;
+  color: rgb(62, 62, 62);
   margin: 0.5rem;
   width: 3.5rem;
   font-size: 1rem;
@@ -1278,7 +1278,7 @@ video {
 
 .mission-2 {
   display: flex;
-  color: #F8FAFC;
+  color: rgb(62, 62, 62);
   margin: 0.7rem;
   width: 3.5rem;
   font-size: 1rem;
