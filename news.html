@@ -38,97 +38,15 @@
 </head>
 
 <body>
-	<header
-		class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center xl:justify-around"
-		id="header">
-		<div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
-			<span class="mission-1 mission-dark"> Saving Lives </span>
-			<a class="logo-border" href="index.html">
-				<img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
-			</a>
-			<span class="mission-2 mission-dark"> Saving Animals </span>
-		</div>
-		<button data-collapse-toggle="navbar-default" type="button"
-			class="absolute top-7 right-4 sm:inline-flex sm:items-center p-2 xl:hidden focus:outline-none text_4"
-			aria-controls="navbar-default" aria-expanded="false" id="nav-button">
-			<span class="sr-only">Open main menu</span>
-			<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-				xmlns="http://www.w3.org/2000/svg">
-				<path fill-rule="evenodd"
-					d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-					clip-rule="evenodd"></path>
-			</svg>
-		</button>
-		<nav class="">
-			<div class="hidden w-full mb-5 xl:mb-0 xl:block z-2" id="navbar">
-				<ul
-					class="w-[100vw] h-1/2 top-0 right-0 p-8 xl:px-3 mt-12 xl:mt-0 text-center text-base xl:text-lg space-y-4 xl:space-y-0 xl:space-x-5 lg:static xl:w-auto flex flex-col rounded-lg items-center xl:items-center xl:bg-transparent xl:border-0 xl:flex-row justify-between">
+	  <div id="header-container"></div>
 
-					<li>
-						<a href="./index.html"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
-					</li>
-					<li>
-						<a href="index.html#meet"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Meet
-							Pets</a>
-					</li>
-					<li>
-						<a href="index.html#About"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About
-							Us</a>
-					</li>
-					<li>
-						<a href="./news.html"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet News</a>
-					</li>
-					<li>
-						<a href="./blog.html"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
-					</li>
-					<li>
-						<a href="./donate.html"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate</a>
-					</li>
-					<li>
-						<a
-							href="./volunteer.html"
-							class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
-							>Support Us</a
-						>
-					</li>
-					<li>
-						<a href="./reportstary.html"
-							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
-							Report</a>
-					</li>
-					<li>
-						<a href="./index.html#contact">
-							<button
-								class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
-								Contact Us
-								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-									stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-									<path d="M5 12h14M12 5l7 7-7 7"></path>
-								</svg>
-							</button>
-						</a>
-					</li>
-					<li>
-						<a id="theme-toggle">
-							<i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
-						</a>
-					</li>
-					<!-- google translate -->
-					<div id="google_translate_element">
-						<script type="text/javascript"
-							src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-					</div>
-				</ul>
-			</div>
-		</nav>
-
-	</header>
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('header-container').innerHTML = html;
+      });
+  </script>
 
 	<!-- Pet news -->
 	<div class="news-container"
