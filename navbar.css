@@ -33,6 +33,11 @@
   color: rgb(255 177 0 / var(--tw-text-opacity));
 }
 
+#switch.turn-white-hover:hover {
+  --tw-text-opacity: 0.65;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .bg-header-orange-light {
   --tw-bg-opacity: 0.4;
   background-color: rgb(255 171 87 / var(--tw-bg-opacity));
@@ -174,14 +179,6 @@ a {
   position: relative;
 }
 
-a:visited, 
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
-  outline: none;
-}
-
 a::after {
   content: '';
   position: absolute;
@@ -202,6 +199,8 @@ a:hover {
   cursor: pointer;
   
 }
+
+
 
 .nav-items div{
   font-size: 20px;
