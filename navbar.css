@@ -142,6 +142,10 @@
   height: fit-content;
 }
 
+#navbar-item {
+  font-size: 16px;
+}
+
 .goog-logo-link,.goog-te-gadget span,.goog-te-banner-frame,#goog-gt-tt, .goog-te-balloon-frame,div#goog-gt-{
   display: none!important;
 }
@@ -154,7 +158,6 @@
 .skiptranslate goog-te-gadget #text{
   display: none!important;
 }
-
 
 /* navbar changed responsiveness so the text doesn't get too big in the navbar */
 
